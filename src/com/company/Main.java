@@ -47,11 +47,14 @@ public class Main {
 
 		//iterates through employees list returning a list to the console
 		for(Employee employee : employees)
-			System.out.println(employee.getName()
-			);
+			System.out.println(employee.getName());
     }
 }
 
+	public final static String doStringStuff(UpperConcat uc, String s1, String s2) {
+		return uc.upperAndConcat(s1, s2);
+}
+}
 //Employee class
 class Employee {
 	//private variables
@@ -85,6 +88,10 @@ class Employee {
 	}
 }
 
+
+interface UpperConcat {
+	public String upperAndConcat(String s1, String s2);
+}
 
 //class CodeToRun implements Runnable {
 //	@Override
